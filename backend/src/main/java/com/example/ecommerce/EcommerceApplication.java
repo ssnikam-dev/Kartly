@@ -1,6 +1,7 @@
 package com.example.ecommerce;
 
 import java.io.IOException;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Properties;
 
@@ -109,19 +110,10 @@ public static final org.slf4j.Logger logger = LoggerFactory.getLogger(EcommerceA
 		@Bean
 		public CorsConfiguration buildCorsConfig() {
 		    CorsConfiguration corsConfiguration = new CorsConfiguration();
-
+		    String corsDomains=environment.getProperty("cors.domains");
 		    // Use setAllowedOrigins instead of setAllowedOriginPatterns if not using wildcards
-		    List<String> allowedOrigins = List.of(
-		            "http://localhost:3000",
-					"http://31.97.110.118",
-					"http://31.97.110.118:80",
-					"http://31.97.110.118:3000",
-					"http://31.97.110.118:3000/ecommerce",
-					"http://localhost:80", 
-		            "https://ecommerce.codebysushant.com",
-		            "http://ecommerce.codebysushant.com",
-		            "http://ecommerce-nlb-frontend-803c4743c5de5a4b.elb.eu-north-1.amazonaws.com"
-		    );
+		    List<String> allowedOrigins =
+		            Arrays.asList(corsDomains.split(","));
 		    corsConfiguration.setAllowedOrigins(allowedOrigins);
 
 		    // Allow all headers
@@ -289,3 +281,4 @@ public static final org.slf4j.Logger logger = LoggerFactory.getLogger(EcommerceA
 	private DataSourceProperties dataSourceProperties;
 
 }
+
