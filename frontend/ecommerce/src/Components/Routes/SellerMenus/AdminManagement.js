@@ -6,7 +6,7 @@ export default function BusinessAdminMgmt() {
     return (
         <>
             <Route path='/' element={<CommonScreen />}>
-                <Route path='ecommerce/admin/department-master/add' element={<DepartmentMaster />} />
+                <Route path='admin/department-master/add' element={<DepartmentMaster />} />
             </Route>
         </>
     )

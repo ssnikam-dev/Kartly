@@ -14,17 +14,17 @@ import ProductFinalCostMaster from '../../ModuleAndSubmodule/Seller/InventoryMgm
 export default function InventoryMgmt() {
     return (
         <>
-            <Route path="ecommerce/inventory-mgmt/product-master/add" element={<ProductMaster />} />
-            <Route path="ecommerce/inventory-mgmt/warehouse-master/add" element={<WarehouseMaster />} />
-            <Route path="ecommerce/inventory-mgmt/stock-product-master/add" element={<StockProductMaster />} />
-            <Route path='ecommerce/inventory-mgmt/supplier-master/add' element={<SupplierMaster />} />
-            <Route path='ecommerce/inventory-mgmt/physical-stock-update' element={<PhysicalStockProductUpdate />} />
-            <Route path='ecommerce/inventory-mgmt/reorder-initiator' element={<ReorderInitiator />} />
-            <Route path='ecommerce/inventory-mgmt/requested-reorder-status' element={<RequestedReorderStatus />} />
-            <Route path='ecommerce/inventory-mgmt/dashboard' element={<InventoryDashboard />} />
-            <Route path='ecommerce/inventory-mgmt/abc-analysis' element={<ABCAnalysis />} />
-            <Route path='ecommerce/inventory-mgmt/product-final-specification-master' element={<ProductSpecificationValueMaster />} />
-            <Route path='ecommerce/inventory-mgmt/product-final-cost-master' element={<ProductFinalCostMaster />} />
+            <Route path="inventory-mgmt/product-master/add" element={<ProductMaster />} />
+            <Route path="inventory-mgmt/warehouse-master/add" element={<WarehouseMaster />} />
+            <Route path="inventory-mgmt/stock-product-master/add" element={<StockProductMaster />} />
+            <Route path='inventory-mgmt/supplier-master/add' element={<SupplierMaster />} />
+            <Route path='inventory-mgmt/physical-stock-update' element={<PhysicalStockProductUpdate />} />
+            <Route path='inventory-mgmt/reorder-initiator' element={<ReorderInitiator />} />
+            <Route path='inventory-mgmt/requested-reorder-status' element={<RequestedReorderStatus />} />
+            <Route path='inventory-mgmt/dashboard' element={<InventoryDashboard />} />
+            <Route path='inventory-mgmt/abc-analysis' element={<ABCAnalysis />} />
+            <Route path='inventory-mgmt/product-final-specification-master' element={<ProductSpecificationValueMaster />} />
+            <Route path='inventory-mgmt/product-final-cost-master' element={<ProductFinalCostMaster />} />
         </>
     )
 }

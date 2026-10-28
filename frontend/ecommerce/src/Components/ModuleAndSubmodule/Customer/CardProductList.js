@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 export default function CardProductList() {
     return (
-        <NavLink to="/ecommerce/product/view" className="row">
+        <NavLink to="/product/view" className="row">
             <div className="col-sm-4">
                 <img src={require("../../../assets/images/products/p1.jpg")} style={{ height: '20rem' }} class="card-img-top" alt="..." />
             </div>

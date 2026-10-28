@@ -44,7 +44,7 @@ export default function SellerLoginPage() {
         const { token } = result.data.token;  // Modify this according to your API response structure
         login(result.data.token);
         localStorage.setItem('authToken', result.data.token);
-        history("/ecommerce/seller/employee/dashboard")
+        history("/seller/employee/dashboard")
       })
       .catch((error) => {
         setLoading(false);
@@ -89,7 +89,7 @@ export default function SellerLoginPage() {
         // Store token in localStorage (or sessionStorage)
         localStorage.setItem('authToken', result.data.token);
 
-        history("/ecommerce/seller/dashboard")
+        history("/seller/dashboard")
 
         // You could update the context or state to reflect the logged-in user
         // For example, using context or useState to set auth token globally:
@@ -170,7 +170,7 @@ export default function SellerLoginPage() {
                   </div>
                   <div className="row">
                     <div className="col-sm-12 mt-2" style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }} >
-                      <NavLink className="btn btn-light" to="/ecommerce/seller/registration" style={{ borderRadius: '2rem', border: '0.5px solid gray' }}>Create Account</NavLink>
+                      <NavLink className="btn btn-light" to="/seller/registration" style={{ borderRadius: '2rem', border: '0.5px solid gray' }}>Create Account</NavLink>
                     </div>
                   </div>
                   <div className="col-sm-12 mt-2" style={{

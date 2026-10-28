@@ -55,7 +55,7 @@ export default function LoginPage() {
         // Store token in localStorage (or sessionStorage)
         localStorage.setItem('authToken', result.data.token);
 
-        history("/ecommerce/home")
+        history("/home")
 
         // You could update the context or state to reflect the logged-in user
         // For example, using context or useState to set auth token globally:
@@ -119,9 +119,9 @@ export default function LoginPage() {
             Sign in
           </NavLink>
           <div className="auth-divider">New here?</div>
-          <NavLink to="/ecommerce/signup" className="btn btn-light btn-block">Create account</NavLink>
+          <NavLink to="/signup" className="btn btn-light btn-block">Create account</NavLink>
           <p className="text-center mt-4 mb-0" style={{ fontSize: '.88rem', color: 'var(--ink-500)' }}>
-            Are you a seller? <NavLink to="/ecommerce/seller/login" style={{ fontWeight: 600 }}>Sign in here</NavLink>
+            Are you a seller? <NavLink to="/seller/login" style={{ fontWeight: 600 }}>Sign in here</NavLink>
           </p>
         </form>
       </div>

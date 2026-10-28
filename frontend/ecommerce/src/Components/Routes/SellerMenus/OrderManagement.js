@@ -11,12 +11,12 @@ import GenerateInvoice from '../../ModuleAndSubmodule/Seller/OrderMgmt/GenerateI
 export default function OrderManagement() {
     return (
         <>
-            <Route path='ecommerce/order-mgmt/dashboard' element={<OrderMgMyDashboard />} />
-            <Route path='ecommerce/order-mgmt/received-order-requests' element={<ReceivedOrderRequests />} />
-            <Route path='ecommerce/order-mgmt/order-details-page' element={<OrderDetailsPage />} />
-            <Route path='ecommerce/order-mgmt/check-availabiliy-products' element={<CheckAvailibilityOrder />} />
-            <Route path='ecommerce/order-mgmt/send-notification' element={<SendNotificationsOrder />} />
-            <Route path='ecommerce/order-mgmt/generate-invoice' element={<GenerateInvoice />} />
+            <Route path='order-mgmt/dashboard' element={<OrderMgMyDashboard />} />
+            <Route path='order-mgmt/received-order-requests' element={<ReceivedOrderRequests />} />
+            <Route path='order-mgmt/order-details-page' element={<OrderDetailsPage />} />
+            <Route path='order-mgmt/check-availabiliy-products' element={<CheckAvailibilityOrder />} />
+            <Route path='order-mgmt/send-notification' element={<SendNotificationsOrder />} />
+            <Route path='order-mgmt/generate-invoice' element={<GenerateInvoice />} />
         </>
     )
 }

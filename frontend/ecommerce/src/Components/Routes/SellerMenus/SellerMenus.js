@@ -17,8 +17,8 @@ export default function SellerMenus() {
                 {LogisticsMgmt()}
                 {UserMgmt()}
                 {BusinessAdminMgmt()}
-                <Route path='ecommerce/seller/dashboard' element={<SellerDashboard />} />
-                <Route path='ecommerce/seller/employee/dashboard' element={<EmployeeDashboard />} />
+                <Route path='seller/dashboard' element={<SellerDashboard />} />
+                <Route path='seller/employee/dashboard' element={<EmployeeDashboard />} />
             </Route>
         </>
     )

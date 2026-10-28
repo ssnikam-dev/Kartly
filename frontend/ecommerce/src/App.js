@@ -16,19 +16,19 @@ import PersistentDrawerLeft from "./Components/ModuleAndSubmodule/NewSidebar";
 function App() {
   return (
     <>
-      <Router basename="/ecommerce">
+      <Router basename="/">
         <Routes>
           <Route path="/react/index" element={<LoginPage />} />
           <Route path="/" element={<LoginPage />} />
           <Route path="/new-sidebar" element={<PersistentDrawerLeft />} />
           <Route path="/" element={<CommonScreen />}>
-            <Route path="/ecommerce/home" element={<HomePage />} />
+            <Route path="/home" element={<HomePage />} />
           </Route>
-          <Route path="/ecommerce/logout" element={<LoginPage />} />
-          <Route path="/ecommerce/seller/login" element={<SellerLoginPage />} />
-          <Route path="/ecommerce/signup" element={<CustomerRegistration />} />
-          <Route path="/ecommerce/seller/registration" element={<SellerRegistration />} />
-          <Route path="/ecommerce/admin/login" element={<AdminLoginPage />} />
+          <Route path="/logout" element={<LoginPage />} />
+          <Route path="/seller/login" element={<SellerLoginPage />} />
+          <Route path="/signup" element={<CustomerRegistration />} />
+          <Route path="/seller/registration" element={<SellerRegistration />} />
+          <Route path="/admin/login" element={<AdminLoginPage />} />
           {AdminMenus()}
           {SellerMenus()}
           {CustomerMenus()}

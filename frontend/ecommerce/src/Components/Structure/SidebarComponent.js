@@ -213,7 +213,7 @@ export default function PersistentDrawerLeft() {
     };
   }, []);
   function goToHome() {
-    history("/ecommerce/home")
+    history("/home")
   }
   function setCountryCode(countryObj) {
     localStorage.setItem('currencyCode', countryObj.currencyCode);
@@ -302,7 +302,7 @@ export default function PersistentDrawerLeft() {
               <SearchIcon />
               <InputBase placeholder="Search…" sx={{ marginLeft: 1 }} />
             </Box>
-            <IconButton onClick={() => history('/ecommerce/cart/view')}>
+            <IconButton onClick={() => history('/cart/view')}>
               <i className="fa badge fa-lg" value={localStorage.getItem('cartItemNo')}>&#xf07a;</i>
             </IconButton>
 
@@ -318,7 +318,7 @@ export default function PersistentDrawerLeft() {
               <Avatar src={require('../../assets/images/user.png')} alt="Profile" />
             </IconButton>
             <Menu anchorEl={anchorEl} open={openMenu} onClose={handleMenuClose}>
-              <MenuItem onClick={() => history('/ecommerce/profile')}>My Profile</MenuItem>
+              <MenuItem onClick={() => history('/profile')}>My Profile</MenuItem>
               <MenuItem onClick={() => history('/settings')}>Settings</MenuItem>
               <Divider />
               <MenuItem onClick={handleLogout}>Log out</MenuItem>

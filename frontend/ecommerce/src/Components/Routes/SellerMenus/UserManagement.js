@@ -5,8 +5,8 @@ import AddUser from '../../ModuleAndSubmodule/Seller/UserMgmt/AddUser';
 export default function UserMgmt() {
     return (
         <>
-            <Route path="ecommerce/user-mgmt/role-master/add" element={<RoleMaster />} />
-            <Route path="ecommerce/user-mgmt/add-user/add" element={<AddUser />} />
+            <Route path="user-mgmt/role-master/add" element={<RoleMaster />} />
+            <Route path="user-mgmt/add-user/add" element={<AddUser />} />
 
         </>
     )

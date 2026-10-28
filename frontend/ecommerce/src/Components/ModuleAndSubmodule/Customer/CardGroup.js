@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 
 export default function CardGroup(props) {
     const cards = Array.from({ length: props.number }, (_, index) => (
-        <NavLink to="/ecommerce/product/view" className="col-md-3 col-sm-12" key={index} >
+        <NavLink to="/product/view" className="col-md-3 col-sm-12" key={index} >
             <img
                 src={require("../../../assets/images/products/p2.jpg")}
                 className="card-img-top"

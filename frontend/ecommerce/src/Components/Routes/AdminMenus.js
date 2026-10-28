@@ -18,18 +18,18 @@ export default function AdminMenus() {
     return (
         <>
             <Route path='/' element={<CommonScreen />}>
-                <Route path="ecommerce/configuration/menu-type-master" element={<MenuTypeMaster />} />
-                <Route path="ecommerce/submodule/add" element={<SubModuleMasterAdd />} />
-                <Route path="ecommerce/location-master/add" element={<LocationLevelMaster />} />
-                <Route path="ecommerce/country-master/add" element={<CountryMaster />} />
-                <Route path='ecommerce/admin/dashboard' element={<AdminDashboard />} />
-                <Route path='ecommerce/admin/brand-master' element={<BrandMaster />} />
-                <Route path='ecommerce/admin/location-level2' element={<LocationLevel2Master />} />
-                <Route path='ecommerce/admin/location-level3' element={<LocationLevel3Master />} />
-                <Route path='ecommerce/admin/location-level4' element={<LocationLevel4Master />} />
-                <Route path='ecommerce/admin/location-level5' element={<LocationLevel5Master />} />
-                <Route path='ecommerce/admin/common-data' element={<CommonData />} />
-                <Route path='ecommerce/admin/country-currency-master' element={<CountryCurrencyMaster />} />
+                <Route path="configuration/menu-type-master" element={<MenuTypeMaster />} />
+                <Route path="submodule/add" element={<SubModuleMasterAdd />} />
+                <Route path="location-master/add" element={<LocationLevelMaster />} />
+                <Route path="country-master/add" element={<CountryMaster />} />
+                <Route path='admin/dashboard' element={<AdminDashboard />} />
+                <Route path='admin/brand-master' element={<BrandMaster />} />
+                <Route path='admin/location-level2' element={<LocationLevel2Master />} />
+                <Route path='admin/location-level3' element={<LocationLevel3Master />} />
+                <Route path='admin/location-level4' element={<LocationLevel4Master />} />
+                <Route path='admin/location-level5' element={<LocationLevel5Master />} />
+                <Route path='admin/common-data' element={<CommonData />} />
+                <Route path='admin/country-currency-master' element={<CountryCurrencyMaster />} />
             </Route>
         </>
     )

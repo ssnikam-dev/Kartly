@@ -9,10 +9,10 @@ export default function CustomerMenus() {
     return (
         <>
             <Route path='/' element={<CommonScreen />}>
-                <Route path="ecommerce/product/view" element={<ProductView />} />
-                <Route path="ecommerce/profile" element={<ProfilePage />} />
-                <Route path="ecommerce/allproducts" element={<ProductList />} />
-                <Route path="ecommerce/cart/view" element={<Cart />} />
+                <Route path="product/view" element={<ProductView />} />
+                <Route path="profile" element={<ProfilePage />} />
+                <Route path="allproducts" element={<ProductList />} />
+                <Route path="cart/view" element={<Cart />} />
             </Route>
         </>
     )

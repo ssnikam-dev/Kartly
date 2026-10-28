@@ -10,14 +10,14 @@ import StockProductMaster from '../../ModuleAndSubmodule/Seller/InventoryMgmt/St
 export default function LogisticsMgmt() {
     return (
         <>
-            <Route path='ecommerce/logistics/dashboard' element={<LogisticsDashboard />} />
-            <Route path='ecommerce/logistics/check-availibility-logistics' element={<CheckAvailibilityLogistics />} />
-            <Route path='ecommerce/logistics/ongoing-shipments' element={<OngoingShipments />} />
-            <Route path='ecommerce/logistics/processed-shipments' element={<ProcessedShipments />} />
-            <Route path='ecommerce/logistics/qa-inspection' element={<QAInspection />} />
-            <Route path='ecommerce/logistics/feedback-complaints' element={<FeedbackComplaint />} />
-            <Route path='ecommerce/logistics/change-order-status' element={<ChangeOrderStatus />} />
-            <Route path='ecommerce/logistics/stock-product-master' element={<StockProductMaster />} />
+            <Route path='logistics/dashboard' element={<LogisticsDashboard />} />
+            <Route path='logistics/check-availibility-logistics' element={<CheckAvailibilityLogistics />} />
+            <Route path='logistics/ongoing-shipments' element={<OngoingShipments />} />
+            <Route path='logistics/processed-shipments' element={<ProcessedShipments />} />
+            <Route path='logistics/qa-inspection' element={<QAInspection />} />
+            <Route path='logistics/feedback-complaints' element={<FeedbackComplaint />} />
+            <Route path='logistics/change-order-status' element={<ChangeOrderStatus />} />
+            <Route path='logistics/stock-product-master' element={<StockProductMaster />} />
         </>
     )
 }

@@ -58,7 +58,7 @@ export default function SellerRegistration() {
                 toast.error("Error occured while registering");
             }
             setTimeout(function () {
-                history('/ecommerce/seller/login');
+                history('/seller/login');
             }, 3000);
 
         }).catch((e) => {
@@ -66,7 +66,7 @@ export default function SellerRegistration() {
             toast.error("Error occured while registering");
             setLoading(false);
             setTimeout(function () {
-                history('/ecommerce/seller/login');
+                history('/seller/login');
             }, 3000);
         })
     }
@@ -136,7 +136,7 @@ export default function SellerRegistration() {
                                     <button className="btn btn-primary mt-2" onClick={register}>Sign up</button>
                                 </div>
                                 <div className="col-sm-8 mt-2" style={{ backgroundColor: '#EEEEEE', borderRadius: '7rem', color: 'black', textDecoration: "underline" }}>
-                                    <span>click to go on <NavLink to="/ecommerce/seller/login" style={{ textDecoration: "underline" }}>login page</NavLink></span>
+                                    <span>click to go on <NavLink to="/seller/login" style={{ textDecoration: "underline" }}>login page</NavLink></span>
                                 </div>
 
                             </div>

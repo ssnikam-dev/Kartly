@@ -10,7 +10,7 @@ export default function Card({ productId, productName, productImages, productCos
 
     return (
         <div className="col-6 col-sm-4 col-md-3 col-xl-2 product-col">
-            <NavLink to={`/ecommerce/product/view?productId=${productId}`} className="card product-card" >
+            <NavLink to={`/product/view?productId=${productId}`} className="card product-card" >
 
                 {productImages && (
                     <div className="carousel-wrapper">

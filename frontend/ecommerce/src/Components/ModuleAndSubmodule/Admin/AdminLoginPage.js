@@ -54,7 +54,7 @@ export default function AdminLoginPage() {
                         const { token } = result.data;
                         login(result.data.token);
                         localStorage.setItem('authToken', result.data.token);
-                        history("/ecommerce/admin/dashboard")
+                        history("/admin/dashboard")
                     })
             } catch (error) {
                 if (error.response) {
