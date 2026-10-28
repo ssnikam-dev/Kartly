@@ -2,6 +2,7 @@ package com.example.ecommerce;
 
 import java.io.IOException;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 import java.util.Properties;
 
@@ -113,7 +114,7 @@ public static final org.slf4j.Logger logger = LoggerFactory.getLogger(EcommerceA
 		    String corsDomains=environment.getProperty("cors.domains");
 		    // Use setAllowedOrigins instead of setAllowedOriginPatterns if not using wildcards
 		    List<String> allowedOrigins =
-		            Arrays.asList(corsDomains.split(","));
+		    		corsDomains!=null?Arrays.asList(corsDomains.split(",")):Collections.emptyList();
 		    corsConfiguration.setAllowedOrigins(allowedOrigins);
 
 		    // Allow all headers
